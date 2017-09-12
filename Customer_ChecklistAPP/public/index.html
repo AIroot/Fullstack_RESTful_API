@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="myApp">
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<title>Customer Checklist Form</title>
 </head>
 <body>
-<h1>Customer Activities</h1>
+<div class="container" ng-controller="AppCtrl">
+	<h1>Customer Activities</h1>
 
-<input ng-model="test">
-{{test}}
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Customer Name</th>
+				<th>Activity </th>
+				<th>Phone Number</th>
+				<th>Participate Statues</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
 
 <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
+<script src = "controllers/controller.js"></script>
 </body>
 </html>
